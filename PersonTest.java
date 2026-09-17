@@ -1,17 +1,19 @@
 public class PersonTest {
     public static void main(String[] args) {
 
-        Person person = new Person();
-        person.setName("joe");
-        person.setAge(12);
-        person.setEmail("ahmed.jawad@student.ccm.edu");
-        person.displayInfo();
+        Person person = new Person("Joe", 9, "schmo.joe@123"); //creates object using parameterized constructor and passes information 
+        person.setName("joe"); //updates name attribute to object
+        person.getName();   //accesses name
+        person.getAge();    //accesses age
+        person.getEmail();  //accesses email
+        person.displayInfo();   //accesses method to display information for person1
 
-        Person person2 = new Person();
-        person2.setName("Schmidley");
-        person2.setAge(15);
-        person2.setEmail("smith.schmidley@student.ccm.edu");
-        person2.displayInfo();      
+        Person person2 = new Person("Schmidley", 12, "smith.schmidley@123"); //creates object using parameterized constructor and passes information
+        person2.setName("schmidley"); //updates name attribute to object
+        person2.getName(); //accesses name
+        person2.getAge();   //accesses age
+        person2.getEmail(); //accesses email
+        person2.displayInfo();      //accesses method to display information for person 2
 
 
 
